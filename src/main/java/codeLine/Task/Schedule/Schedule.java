@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Schedule {
-    @Scheduled(cron = "0 */5 1 * * *")
+    @Scheduled(cron = "0 0 9-17 * * 0-4")
     public void schedule() {
         System.out.println("Drink Water!");
     }
